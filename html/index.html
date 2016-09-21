@@ -1,8 +1,14 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 ie6"> <![endif]-->
+<!--[if IE 7]>	<html class="no-js  lt-ie10 lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>	<html class="no-js lt-ie10 lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>	<html class="no-js lt-ie10 ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Mercadolibre.com</title>
+	<link href="css/build/compilacion.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -10,27 +16,29 @@
 	<article>
 		<h1>Ipad Mini Apple 16 Gb Wifi Led 7.9</h1>
 		<div class="imageContainer">
-			<img src="img/ipad_01.jpg" alt="Ipad Mini Apple 16 Gb Wifi Led 7.9" />
+			<a id="zoom-preload" class="zoom" href="img/ipad_01.jpg" target="_blank">
+			    <img src="img/ipad_01.jpg" alt="Ipad Mini Apple 16 Gb Wifi Led 7.9" />
+			</a>
 		</div>
 		<div class="infoContainer">
 			$4799<span>99</span>
-			Quantity
-			<select>
-				<option>1</option>
-				<option>2</option>
-				<option>3</option>
-				<option>4</option>
-			</select>
-			Payments
-			<select>
-				<option>3</option>
-				<option>6</option>
-				<option>9</option>
-				<option>12</option>
-			</select>
+			<h3 class="demo-dropdown1">Quantity</h3>
+			<br />
+			<menu label="Links" class="ch-hide">
+			    <li>1</li>
+			    <li>2</li>
+			    <li>3</li>
+			</menu><br />
 
-			<button>Buy</button>
-			Mercadolibre insn´t the owner of this product.
+			<h3 class="demo-dropdown2">Payments</h3>
+			<menu label="Links" class="ch-hide">
+			    <li>1</li>
+			    <li>2</li>
+			    <li>3</li>
+			</menu><br />
+			
+			<input type="button" class="ch-btn ch-btn-large" value="Big button"><br />
+			<p>Mercadolibre insn´t the owner of this product.</p>
 
 			More products like this
 			GALLERY
@@ -56,7 +64,15 @@
 	    </div>
 	</section>
 </div>
-<script type="text/javascript" src="js/build/compilacion.js"></script>
-<link href="css/build/compilacion.css" rel="stylesheet" type="text/css" />
 </body>
+<script src="https://ui.mlstatic.com/chico/tiny/0.2.3/tiny.min.js"></script>
+<script type="text/javascript" src="js/build/compilacion.js"></script>
+<script type="text/javascript">
+	new ch.Dropdown(document.querySelector('.demo-dropdown1'));
+	new ch.Dropdown(document.querySelector('.demo-dropdown2'));
+
+	var zoom2 = new ch.Zoom(ch('#zoom-preload')[0]);
+	// Preload image
+	zoom2.loadImage();
+</script>
 </html>
