@@ -2,12 +2,12 @@ body{
     font-family: Arial;
     background-color: rgb(253,253,253);
 }
-.title {
+h1 {
 	padding: 10px;
 	margin-top: 0px;
 	background-color: #e1f8ff;
 }
-.container {
+main {
     max-width: 1000px;
     margin: 0 auto;
     background-color: rgb(252,252,252);
@@ -64,8 +64,12 @@ hr.separator {
 .form .ch-btn {
 	float:left;
 	clear: both;
+	margin-bottom: 5px;
 }
 .form .buyAlert {
 	font-size:1p1x;
 	clear: both;
+}
+.moreproducts{
+	font-size: 18px;
 }
