@@ -1,21 +1,71 @@
+body{
+    font-family: Arial;
+    background-color: rgb(253,253,253);
+}
+.title {
+	padding: 10px;
+	margin-top: 0px;
+	background-color: #e1f8ff;
+}
 .container {
-	max-width:1000px;
-	margin:0 auto;
-	background-color: #ccc;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(252,252,252);
+    padding: 10px;
 }
 
 .imageContainer {
 	width:45%;
 	float:left;
+	border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
 }
 .imageContainer img {
 	width:100%;
 }
+.price {
+    font-size: 40px;
+    padding: 20px 0px 20px 0px;
+    line-height: 38px;
+}
+.price span {
+	font-size: 20px;
+    position: relative;
+    top: -14px;
+    left: 3px;
+}
 hr.separator {
-	clear:both;
-	margin:20px 0px;
+    clear: both;
+    margin-bottom: 59px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ccc;
 }
 .infoContainer {
 	width: 50%;
 	float:right;
+}
+.form {
+	border-top: 1px solid #e1f8ff;
+	border-bottom: 1px solid #e1f8ff;
+    padding: 20px 0px;
+}
+.form label {
+    display: block;
+    float: left;
+    padding: 0px 10px 0px 0px;
+    clear: both;
+    margin-bottom: 10px;
+}
+.form select {
+    float: left;
+    width: 50px;
+}
+.form .ch-btn {
+	float:left;
+	clear: both;
+}
+.form .buyAlert {
+	font-size:1p1x;
+	clear: both;
 }
