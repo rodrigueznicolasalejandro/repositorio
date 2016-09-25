@@ -14,12 +14,32 @@ main {
     padding: 10px;
 }
 
-.imageContainer {
-	width:45%;
-	float:left;
-	border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #fff;
+@media (max-width: 450px) { 
+    .imageContainer {
+        width:100%;
+        float:left;
+        border: 1px solid #ccc;
+        padding: 2px;
+        background-color: #fff;
+    }
+}
+@media (min-width: 451px) and (max-width: 768px) { 
+    .imageContainer {
+        width:45%;
+        float:left;
+        border: 1px solid #ccc;
+        padding: 2px;
+        background-color: #fff;
+    }
+}
+@media (min-width: 769px){
+    .imageContainer {
+        width:45%;
+        float:left;
+        border: 1px solid #ccc;
+        padding: 10px;
+        background-color: #fff;
+    }
 }
 .imageContainer img {
 	width:100%;
@@ -41,9 +61,33 @@ hr.separator {
     padding-top: 20px;
     border-bottom: 1px solid #ccc;
 }
-.infoContainer {
-	width: 50%;
-	float:right;
+@media (max-width: 450px) { 
+    .infoContainer {
+        width: 100%;
+        float:none;
+        clear: both;
+    }
+}
+@media (min-width: 451px){
+    .infoContainer {
+        width: 50%;
+        float:right;
+    }
+}
+@media (max-width: 768px) { 
+    .infoContainerCarrousel {
+        width: 100%;
+        clear: both;
+        border-top: 1px solid #e1f8ff;
+    }
+}
+@media (min-width: 769px){
+    .infoContainerCarrousel {
+        width: 50%;
+        float: right;
+        margin-left: 1%;
+        border-top: 1px solid #e1f8ff;
+    }
 }
 .form {
 	border-top: 1px solid #e1f8ff;
@@ -67,7 +111,7 @@ hr.separator {
 	margin-bottom: 5px;
 }
 .form .buyAlert {
-	font-size:1p1x;
+	font-size:11px;
 	clear: both;
 }
 .moreproducts{
